@@ -111,7 +111,7 @@
 <meta property="og:site_name" content="Hubery&#39;s 博客">
 <meta property="og:description" content="Web页面布局要求：三栏布局左右各300像素，中间自适应 HTML结构123456789101112131415161718&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;gt;  &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;  &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;  &amp;lt;style type">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-21T13:57:11.000Z">
+<meta property="og:updated_time" content="2018-02-21T14:50:33.460Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="三栏布局的五种实现方法">
 <meta name="twitter:description" content="Web页面布局要求：三栏布局左右各300像素，中间自适应 HTML结构123456789101112131415161718&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;gt;  &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;  &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;  &amp;lt;style type">
@@ -227,21 +227,21 @@
         
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">5</span>
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">7</span>
               </a>
         </li>
       
         
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">1</span>
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">2</span>
               </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">1</span>
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">7</span>
               </a>
         </li>
       
@@ -397,6 +397,7 @@
 <h4 id="三、table"><a href="#三、table" class="headerlink" title="三、table"></a>三、table</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123; <span class="attribute">display</span>: table; <span class="attribute">width</span>: <span class="number">100%</span>; &#125;</span><br><span class="line"><span class="selector-class">.left</span>&#123; <span class="attribute">width</span>: <span class="number">300px</span>; <span class="attribute">display</span>: table-cell; <span class="attribute">background-color</span>: red;&#125;</span><br><span class="line"><span class="selector-class">.right</span>&#123; <span class="attribute">width</span>: <span class="number">300px</span>; <span class="attribute">display</span>: table-cell; <span class="attribute">background-color</span>: blue; &#125;</span><br><span class="line"><span class="selector-class">.center</span>&#123; <span class="attribute">background-color</span>: yellow; <span class="attribute">display</span>: table-cell;&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="四、flex"><a href="#四、flex" class="headerlink" title="四、flex"></a>四、flex</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123; <span class="attribute">display</span>: flex; <span class="attribute">overflow</span>: hidden;&#125;</span><br><span class="line"><span class="selector-class">.left</span>&#123; <span class="attribute">width</span>: <span class="number">300px</span>; <span class="attribute">background-color</span>: red;&#125;</span><br><span class="line"><span class="selector-class">.right</span>&#123; <span class="attribute">width</span>: <span class="number">300px</span>; <span class="attribute">background-color</span>: blue;&#125;</span><br><span class="line"><span class="selector-class">.center</span>&#123; <span class="attribute">background-color</span>: yellow; <span class="attribute">flex</span>: <span class="number">1</span>;&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="五、网格grid"><a href="#五、网格grid" class="headerlink" title="五、网格grid"></a>五、网格grid</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123; <span class="attribute">display</span>: grid; <span class="attribute">grid-template-rows</span>: auto; <span class="attribute">grid-template-columns</span>: <span class="number">300px</span> auto <span class="number">300px</span>; &#125;</span><br><span class="line"><span class="selector-class">.left</span>&#123; <span class="attribute">background-color</span>: red;&#125;</span><br><span class="line"><span class="selector-class">.right</span>&#123; <span class="attribute">background-color</span>: blue; &#125;</span><br><span class="line"><span class="selector-class">.center</span>&#123; <span class="attribute">background-color</span>: yellow;&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -433,6 +434,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/04/28/jQuery插件：textTip/" rel="next" title="jQuery插件：textTip">
+                <i class="fa fa-chevron-left"></i> jQuery插件：textTip
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
@@ -507,7 +524,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -522,7 +539,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -545,7 +564,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
