@@ -107,23 +107,23 @@
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DOM事件">
-<meta property="og:url" content="https://huberystyle.github.io/2017/04/12/DOM事件/index.html">
+<meta property="og:url" content="huberystyle.github.io/2017/04/12/DOM事件/index.html">
 <meta property="og:site_name" content="Hubery&#39;s 博客">
 <meta property="og:description" content="DOM事件1、DOM事件的级别DOM0  element.onclick=function(){}DOM2  element.addEventListener(‘click’,function(){}, true)DOM3  element.addEventListener(‘click’,function(){}, true) 2、DOM事件模型（你了解DOM事件模型吗）捕获 冒泡window">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://huberystyle.github.io/2017/04/12/DOM事件/dom.png">
+<meta property="og:image" content="/12/DOM事件/dom.png">
 <meta property="og:updated_time" content="2018-02-22T16:07:46.273Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM事件">
 <meta name="twitter:description" content="DOM事件1、DOM事件的级别DOM0  element.onclick=function(){}DOM2  element.addEventListener(‘click’,function(){}, true)DOM3  element.addEventListener(‘click’,function(){}, true) 2、DOM事件模型（你了解DOM事件模型吗）捕获 冒泡window">
-<meta name="twitter:image" content="https://huberystyle.github.io/2017/04/12/DOM事件/dom.png">
+<meta name="twitter:image" content="/12/DOM事件/dom.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://huberystyle.github.io/2017/04/12/DOM事件/"/>
+  <link rel="canonical" href="huberystyle.github.io/2017/04/12/DOM事件/"/>
 
 
 
@@ -305,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://huberystyle.github.io/2017/04/12/DOM事件/">
+    <link itemprop="mainEntityOfPage" href="huberystyle.github.io/2017/04/12/DOM事件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hubery Hu">
@@ -392,7 +392,7 @@
         <h2 id="DOM事件"><a href="#DOM事件" class="headerlink" title="DOM事件"></a>DOM事件</h2><h6 id="1、DOM事件的级别"><a href="#1、DOM事件的级别" class="headerlink" title="1、DOM事件的级别"></a>1、DOM事件的级别</h6><p>DOM0  element.onclick=function(){}<br>DOM2  element.addEventListener(‘click’,function(){}, true)<br>DOM3  element.addEventListener(‘click’,function(){}, true)</p>
 <h6 id="2、DOM事件模型（你了解DOM事件模型吗）"><a href="#2、DOM事件模型（你了解DOM事件模型吗）" class="headerlink" title="2、DOM事件模型（你了解DOM事件模型吗）"></a>2、DOM事件模型（你了解DOM事件模型吗）</h6><p>捕获 冒泡<br>window document html body …</p>
 <h6 id="3、DOM事件流"><a href="#3、DOM事件流" class="headerlink" title="3、DOM事件流"></a>3、DOM事件流</h6><p>事件捕获  -》 目标阶段 -〉冒泡</p>
-<h6 id="4、描述DOM事件捕获的具体流程"><a href="#4、描述DOM事件捕获的具体流程" class="headerlink" title="4、描述DOM事件捕获的具体流程"></a>4、描述DOM事件捕获的具体流程</h6><p>捕获是从上到下的过程<br>冒泡是从下到上的过程<br><img src="/2017/04/12/DOM事件/dom.png" alt="dom"><br>￼</p>
+<h6 id="4、描述DOM事件捕获的具体流程"><a href="#4、描述DOM事件捕获的具体流程" class="headerlink" title="4、描述DOM事件捕获的具体流程"></a>4、描述DOM事件捕获的具体流程</h6><p>捕获是从上到下的过程<br>冒泡是从下到上的过程<br><img src="/12/DOM事件/dom.png" alt="dom"><br>￼</p>
 <h6 id="5、Event对象的常见应用"><a href="#5、Event对象的常见应用" class="headerlink" title="5、Event对象的常见应用"></a>5、Event对象的常见应用</h6><p>event.preventDefault() // 阻止默认行为<br>event.stopProgration() // 阻止冒泡<br>event.stopImmediateProgration() // 事件响应优先级的方法<br>event.target  // 事件委托/代理，当前被点击的元素，早期的ie是不支持的<br>event.currentTarget // 返回触发事件的元素</p>
 <p>e.target 指向触发事件监听的对象。// 谁触发<br>e.currentTarget 指向添加监听事件的对象 // 谁绑定</p>
 <h6 id="6、自定义事件"><a href="#6、自定义事件" class="headerlink" title="6、自定义事件"></a>6、自定义事件</h6><p>var eve = new Event(‘look’);<br>ele.dispachEvent(eve);<br>以上这种创建方法不好的地方就是不能带参数<br>需要带参数用 customEvent</p>
