@@ -243,7 +243,7 @@
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">16</span>
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">17</span>
               </a>
         </li>
       
@@ -397,8 +397,8 @@
 <p>e.target 指向触发事件监听的对象。// 谁触发<br>e.currentTarget 指向添加监听事件的对象 // 谁绑定</p>
 <h6 id="6、自定义事件"><a href="#6、自定义事件" class="headerlink" title="6、自定义事件"></a>6、自定义事件</h6><p>var eve = new Event(‘look’);<br>ele.dispachEvent(eve);<br>以上这种创建方法不好的地方就是不能带参数<br>需要带参数用 customEvent</p>
 <h6 id="7、事件绑定"><a href="#7、事件绑定" class="headerlink" title="7、事件绑定"></a>7、事件绑定</h6><p>有三种常用的事件绑定方式：<br>(1)直接在DOM中绑定；<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">test()</span>&gt;</span>test<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	alert(‘test’);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>(2)在JavaScript代码中绑定；<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(‘test’).onclick = futnciton()&#123;</span><br><span class="line">	alert(‘test’);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  alert(‘test’);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>(2)在JavaScript代码中绑定；<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(‘test’).onclick = futnciton()&#123;</span><br><span class="line">  alert(‘test’);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>(3)绑定事件监听函数<br>document.getElementById(‘test’).addEventListener(‘click’,function(){ alert(‘test’)}, true);</p>
 <h6 id="8、事件监听（事件流）"><a href="#8、事件监听（事件流）" class="headerlink" title="8、事件监听（事件流）"></a>8、事件监听（事件流）</h6><p>addEventListener(‘click’,function(){}, true); // 第三个参数true捕获，false冒泡<br>element.attachEvent(event, function) //ie8 以下<br>事件捕获阶段，目标阶段，事件冒泡阶段<br>事件监听的优点是可以绑定多个事件，可以移除事件绑定（常规事件绑定只执行最后一个）</p>
 <h6 id="9、事件委托"><a href="#9、事件委托" class="headerlink" title="9、事件委托"></a>9、事件委托</h6><p>事件委托就是利用冒泡的原理，把事件加的父元素或者祖先元素上，触发执行效果。<br>事件委托的优点：<br>(1)提高JavaScript性能。事件委托可以显著的提高事件的处理速度，减少内存的占用；<br>(2)动态的添加DOM元素，不需要因为元素的改动而修改事件绑定</p>
@@ -525,7 +525,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>

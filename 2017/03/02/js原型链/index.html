@@ -103,19 +103,19 @@
   <meta name="keywords" content="javascript," />
 
 
-<meta name="description" content="原型链 1、创建对象有几种方式？ 12345678var o1=&amp;#123;name:’o1’&amp;#125; // 第一种var o11=new Object(&amp;#123;name:’o11’&amp;#125;); // 第二种var M=function()&amp;#123;	this.name=‘o2’;&amp;#125;var o2 = new M(); // 第三种var P = &amp;#123;name:’o3">
+<meta name="description" content="原型链 1、创建对象有几种方式？ 12345678var o1=&amp;#123;name:’o1’&amp;#125; // 第一种var o11=new Object(&amp;#123;name:’o11’&amp;#125;); // 第二种var M=function()&amp;#123;  this.name=‘o2’;&amp;#125;var o2 = new M(); // 第三种var P = &amp;#123;name:’o">
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js原型链">
 <meta property="og:url" content="https://huberystyle.github.io/2017/03/02/js原型链/index.html">
 <meta property="og:site_name" content="Hubery&#39;s 博客">
-<meta property="og:description" content="原型链 1、创建对象有几种方式？ 12345678var o1=&amp;#123;name:’o1’&amp;#125; // 第一种var o11=new Object(&amp;#123;name:’o11’&amp;#125;); // 第二种var M=function()&amp;#123;	this.name=‘o2’;&amp;#125;var o2 = new M(); // 第三种var P = &amp;#123;name:’o3">
+<meta property="og:description" content="原型链 1、创建对象有几种方式？ 12345678var o1=&amp;#123;name:’o1’&amp;#125; // 第一种var o11=new Object(&amp;#123;name:’o11’&amp;#125;); // 第二种var M=function()&amp;#123;  this.name=‘o2’;&amp;#125;var o2 = new M(); // 第三种var P = &amp;#123;name:’o">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://huberystyle.github.io/2017/03/02/js原型链/prototype.png">
 <meta property="og:updated_time" content="2018-02-22T16:07:46.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js原型链">
-<meta name="twitter:description" content="原型链 1、创建对象有几种方式？ 12345678var o1=&amp;#123;name:’o1’&amp;#125; // 第一种var o11=new Object(&amp;#123;name:’o11’&amp;#125;); // 第二种var M=function()&amp;#123;	this.name=‘o2’;&amp;#125;var o2 = new M(); // 第三种var P = &amp;#123;name:’o3">
+<meta name="twitter:description" content="原型链 1、创建对象有几种方式？ 12345678var o1=&amp;#123;name:’o1’&amp;#125; // 第一种var o11=new Object(&amp;#123;name:’o11’&amp;#125;); // 第二种var M=function()&amp;#123;  this.name=‘o2’;&amp;#125;var o2 = new M(); // 第三种var P = &amp;#123;name:’o">
 <meta name="twitter:image" content="https://huberystyle.github.io/2017/03/02/js原型链/prototype.png">
 
 
@@ -243,7 +243,7 @@
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">16</span>
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">17</span>
               </a>
         </li>
       
@@ -389,7 +389,7 @@
       
 
       
-        <h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><p><strong> 1、创建对象有几种方式？ </strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> o1=&#123;<span class="attr">name</span>:’o1’&#125; <span class="comment">// 第一种</span></span><br><span class="line"><span class="keyword">var</span> o11=<span class="keyword">new</span> <span class="built_in">Object</span>(&#123;<span class="attr">name</span>:’o11’&#125;); <span class="comment">// 第二种</span></span><br><span class="line"><span class="keyword">var</span> M=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.name=‘o2’;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> o2 = <span class="keyword">new</span> M(); <span class="comment">// 第三种</span></span><br><span class="line"><span class="keyword">var</span> P = &#123;<span class="attr">name</span>:’o3’&#125;;</span><br><span class="line"><span class="keyword">var</span> o3=<span class="built_in">Object</span>.create(P); <span class="comment">// 第四种</span></span><br></pre></td></tr></table></figure></p>
+        <h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><p><strong> 1、创建对象有几种方式？ </strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> o1=&#123;<span class="attr">name</span>:’o1’&#125; <span class="comment">// 第一种</span></span><br><span class="line"><span class="keyword">var</span> o11=<span class="keyword">new</span> <span class="built_in">Object</span>(&#123;<span class="attr">name</span>:’o11’&#125;); <span class="comment">// 第二种</span></span><br><span class="line"><span class="keyword">var</span> M=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name=‘o2’;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> o2 = <span class="keyword">new</span> M(); <span class="comment">// 第三种</span></span><br><span class="line"><span class="keyword">var</span> P = &#123;<span class="attr">name</span>:’o3’&#125;;</span><br><span class="line"><span class="keyword">var</span> o3=<span class="built_in">Object</span>.create(P); <span class="comment">// 第四种</span></span><br></pre></td></tr></table></figure></p>
 <p><strong> 2、原型、构造函数、实例、原型链 </strong><br>￼<img src="/2017/03/02/js原型链/prototype.png" alt="原型链"></p>
 <p>3、new运算符</p>
 
@@ -515,7 +515,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
